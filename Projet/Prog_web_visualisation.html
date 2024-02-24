@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoine DESCAMPS</title>
+    <link href="../style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body id="body_principal">
+    <!--Barre de navigation-->
+    <div id="header_nav" class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 ">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-2 fw-bold" id="nom_nav_bar">Antoine DESCAMPS</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item fw-bold fs-5"><a href="../Accueil.html" class="nav-link"
+                        aria-current="page">Accueil</a></li>
+                <li class="nav-item fw-bold fs-5"><a href="../CV.html" class="nav-link">CV</a></li>
+                <li class="nav-item fw-bold fs-5"><a href="../Portfolio.html" class="nav-link active">Portfolio</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div id="Projet_div_principal">
+
+        <a class="btn btn-primary" href="../Portfolio.html" role="button"><i class="bi bi-arrow-left"></i>Retour
+        </a>
+
+        <div id="Projet_descrition">
+            <h1>Programmation Web pour visualisation de Data</h1>
+            <h2>Mots clés:</h2>
+        </div>
+
+        <!--Carousel d'image-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel ">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Image/Projet_Prog_web_23-24/prog_web_intro.png" alt="Accueil_site"
+                        class="d-block w-100" data-bs-interval="2000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Page d'acceuil</h5>
+                        <p>Premier page sur laquelle vous arrivez. Vous trouvez 4 onglets pours les 4 catégories choisis
+                            pour les datavisualisations.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Image/Projet_Prog_web_23-24/" alt="..." class="d-block w-100"
+                        data-bs-interval="2000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../Image/Projet_QGIS_23-24/qgis_intro.png" alt="..." class="d-block w-100"
+                        data-bs-interval="2000">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon carousel_icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon carousel_icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--Pied de page avec information de contact-->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li><a class="nav-link text-light fw-bold">Adresse : Reims-la-Brulée, Marne</a></li>
+            <li><a class="nav-link text-light fw-bold">Téléphone : 06.48.03.47.39</a></li>
+            <li><a class="nav-link text-light fw-bold">Adresse mail : an.descamps6@gmail.com</a></li>
+            <li><a class="nav-link text-light fw-bold"
+                    href="https://www.linkedin.com/in/antoine-descamps-765132229/">Linkedin <i
+                        class="bi bi-linkedin"></a></li>
+        </ul>
+        <p class="text-center text-light fw-bold">© 2024 Crée par : Antoine DESCAMPS</p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

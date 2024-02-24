@@ -1,0 +1,306 @@
+/*déclaration de variable*/
+:root {
+    --bg-main-color: #26292b;
+    --bg-secondary-color: #383B3D;
+    --hover-color: #646566;
+    --text-main-color: #E4E7E9;
+    --hover-duration: 1s;
+}
+
+/*Intégralité de la page*/
+#body_principal {
+    background-color: var(--bg-main-color);
+}
+
+#nom_nav_bar {
+    font-size: xx-large;
+    color: var(--text-main-color);
+}
+
+#header_nav {
+    background-color: var(--bg-secondary-color);
+    border-radius: 10px;
+    margin-top: 1%;
+
+}
+
+#fw-bold {
+    vertical-align: middle;
+}
+
+/*Titre sur chaque page*/
+.titre_page {
+    text-align: center;
+    color: var(--text-main-color);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.description_page {
+    align-content: center;
+    text-align: center;
+    color: var(--text-main-color);
+    font-weight: bold;
+    width: 45%;
+    margin: auto;
+}
+
+/*--------------------------------------------------*/
+/*Page Accueil*/
+
+
+/*--------------------------------------------------*/
+/*Page CV*/
+
+.CV_separation {
+    background-color: var(--bg-secondary-color);
+    height: 60px;
+}
+
+#CV_background {
+    width: 69%;
+    margin: auto;
+}
+
+#CV_div_nav_section {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.CV_ul_nav_section {
+    list-style-type: none;
+}
+
+.CV_li_nav_section {
+    display: inline;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.CV_liste_section {
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--text-main-color);
+    padding: 7px;
+}
+
+.CV_liste_section:hover {
+    background-color: var(--bg-secondary-color);
+    transition-duration: var(--hover-duration);
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.CV_section {
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.paire {
+    background-color: var(--bg-secondary-color);
+}
+
+.CV_section>p {
+    color: var(--text-main-color);
+    text-align: justify;
+}
+
+.CV_titre_section {
+    color: var(--text-main-color);
+    font-weight: bold;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.CV_titre_partie {
+    color: var(--text-main-color);
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.CV_sous_titre_partie {
+    color: var(--text-main-color);
+    font-size: x-large;
+}
+
+.CV_titre_partie_droite {
+    float: right;
+}
+
+.CV_texte_important {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.CV_lien {
+    color: var(--text-main-color);
+}
+
+.CV_separateur_projet {
+    background-color: #000000;
+    height: 10px;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#CV_table_liste_compétence {
+    color: var(--text-main-color);
+    width: 100%;
+}
+
+#CV_boutton_telechargement {
+    font-size: 25px;
+    font-weight: bold;
+    margin: auto;
+    color: var(--text-main-color);
+    display: flex;
+    width: fit-content;
+    background-color: var(--bg-secondary-color);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+#CV_boutton_telechargement:hover {
+    background-color: var(--hover-color);
+    transition-duration: 0.7s;
+}
+
+#CV_logo_telecharger {
+    margin-left: 7px;
+
+}
+
+#CV_boutton_haut {
+    bottom: 30px;
+    right: 100px;
+    position: fixed;
+}
+
+/*--------------------------------------------------*/
+/*Page Portfolio*/
+
+.Portfolio_liste_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.Portfolio_projet {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 1px var(--text-main-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.Portfolio_projet img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.Portfolio_projet:hover img{
+    transform: scale(1.1);
+}
+
+.Portfolio_descrition {
+    color: var(--text-main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .4), var(--bg-main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.Portfolio_projet:hover .Portfolio_descrition {
+    transform: translateY(0);
+}
+
+/*bouton en savoire plus*/
+.Portfolio_descrition a {
+    color: var(--text-main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.Portfolio_descrition a:hover {
+    background-color: var(--hover-color);
+    transition-duration: 0.7s;
+}
+
+.Portfolio_descrition i {
+    margin-left: 5px;
+}
+
+/*--------------------------------------------------*/
+/*Page de projet*/
+#Projet_div_principal{
+    width: 75%;
+    margin: auto;
+}
+
+/*Boutton retour*/
+#Projet_div_principal a{
+    float: right;
+    font-weight: bold;
+}
+
+#Projet_div_principal a i{
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+
+/*Descrition*/
+#Projet_descrition{
+    color: var(--text-main-color);
+}
+
+#Projet_descrition h1{
+    font-weight: bold;
+}
+
+#Projet_descrition h2{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*Carrousel*/
+#carouselExampleCaptions{
+    width: 60%;
+    margin: auto;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption{
+    background-color: rgba(135, 135, 135, 0.7);
+    border-radius: 10px;
+}
+
+.carousel_icon{
+    background-color: rgba(135, 135, 135, 0.4);
+    border-radius: 10px;
+    margin: 5px;
+}

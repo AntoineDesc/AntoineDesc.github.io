@@ -1,0 +1,85 @@
+/*Intégralité de la page*/
+#body_principal {
+    background-color: #26292b;
+}
+
+#nom_nav_bar {
+    font-size: xx-large;
+    color: #E4E7E9;
+}
+
+#header_nav {
+    background-color: #383B3D;
+    border-radius: 10px;
+    margin-top: 1%;
+
+}
+
+#fw-bold {
+    vertical-align: middle;
+}
+
+.titre_page {
+    text-align: center;
+    color: #E4E7E9;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.description_page {
+    align-content: center;
+    text-align: center;
+    color: #E4E7E9;
+    font-weight: bold;
+    width: 40%;
+    margin: auto;
+}
+
+/*------------------------------------*/
+/*Division pricipal*/
+
+#Projet_div_principal{
+    width: 75%;
+    margin: auto;
+}
+
+/*Boutton retour*/
+#Projet_div_principal a{
+    float: right;
+    font-weight: bold;
+}
+
+#Projet_div_principal a svg{
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+
+/*Descrition*/
+#Projet_descrition{
+    color: #E4E7E9;
+}
+
+#Projet_descrition h1{
+    font-weight: bold;
+}
+
+#Projet_descrition h2{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*Carrousel*/
+#carouselExampleCaptions{
+    width: 60%;
+    margin: auto;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption{
+    background-color: rgba(214, 214, 214, 0.589);
+    border-radius: 10px;
+}

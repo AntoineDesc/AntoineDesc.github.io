@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoine DESCAMPS</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body id="body_principal">
+    <!--Barre de navigation-->
+    <div id="header_nav" class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 ">
+            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-2 fw-bold" id="nom_nav_bar">Antoine DESCAMPS</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item fw-bold fs-5"><a href="Accueil.html" class="nav-link"
+                        aria-current="page">Accueil</a></li>
+                <li class="nav-item fw-bold fs-5"><a href="CV.html" class="nav-link active">CV</a></li>
+                <li class="nav-item fw-bold fs-5"><a href="Portfolio.html" class="nav-link">Portfolio</a></li>
+            </ul>
+        </header>
+    </div>
+
+
+    <!--Partie du CV-->
+    <div>
+        <h1 class="titre_page">Mon CV</h1>
+        <p class="description_page">Dans cette partie, vous trouverez toutes les informations concernant mon parcours
+            scolaires, mes expériences professionnelles ainsi que mes compétences.</p>
+        <hr class="CV_separation">
+
+        <!--Section-->
+        <div class="CV_section" id="CV_div_nav_section">
+            <ul class="CV_ul_nav_section">
+                <li class="CV_li_nav_section">
+                    <a class="CV_liste_section" href="#formation">Formations</a>
+                </li>
+                <li class="CV_li_nav_section">
+                    <a class="CV_liste_section" href="#experience_pro">Expériences professionnelles</a>
+                </li>
+                <li class="CV_li_nav_section">
+                    <a class="CV_liste_section" href="#projets_etudes">Projets d'études</a>
+                </li>
+                <li class="CV_li_nav_section">
+                    <a class="CV_liste_section" href="#profil_competence">Profil et Compétences</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="CV_background">
+
+            <!--Formations-->
+            <div class="CV_section paire" id="formation">
+                <h2 class="CV_titre_section">Formations</h2>
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Science des Données, spécialité
+                        VCOD</span><span class="CV_titre_partie_droite">2021 - 2024</span></h3>
+                <h4 class="CV_sous_titre_partie">I.U.T. de Metz (57 000)</h4>
+                <p>Cette formation m'a formé dans <span class="CV_texte_important">l'aide à la prise de décision</span>
+                    par
+                    des activités de gestion des données
+                    via <span class="CV_texte_important">la collecte de données, le stockage et l'analyse
+                        statistique</span>. Ainsi que la restitution de
+                    rapports et d'oraux pour la présentation des méthodes et résultats obtenus.</p>
+                <p>La spécialité VCOD (Visualisation et Conception d'Outils Décisionnels) est une spécialité tourner
+                    vers la programmation. Cette spécialité m'a permis d'acquérir de nouvelles compétences portant sur
+                    <span class="CV_texte_important">l'automatisation</span> de tâches tel que la transformation et le
+                    nettoyage de données via des ETL, mais
+                    aussi la <span class="CV_texte_important">programmation de modèles statistiques</span> et leurs
+                    restitutions visuelles adaptés et accessible
+                    pour un public finale non-initié.
+                </p>
+
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Baccalauréat</span><span
+                        class="CV_titre_partie_droite">2018 - 2021</span></h3>
+                <h4 class="CV_sous_titre_partie">Lycée François 1er, Vitry-le-François (51 300)</h4>
+                <p>Spécialités Mathématiques, Physique-Chimie, Histoire-Géographie Géopolitique et Sciences Politiques
+                    ansi qu'option Latin.</p>
+            </div>
+
+
+            <!--Expériences professionnelles-->
+            <div class="CV_section impaire" id="experience_pro">
+                <h2 class="CV_titre_section">Expériences professionnelles</h2>
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Assistant gestion base de données et
+                        <br>
+                        programmation (Stage)</span><span class="CV_titre_partie_droite">2023 (2mois)</span></h3>
+                <h4 class="CV_sous_titre_partie">VINCI FACILITES, Troyes (10 000)</h4>
+                <p>Objectif : Automatisation d'un suivi de maintenance</p>
+                <p>Programmation d'un <span class="CV_texte_important">application Python</span> permettant de lire le
+                    fichier de maintenance Excel, se
+                    connecter au site de l'entreprise, mettre en place les filtres, collecter les données via du parsing
+                    HTML et mettre à jour le fichier de maintenance, tout cela sans besoin d'intéraction de
+                    l'utilisateur.<br>
+
+                    Seconde solution programmé et proposé à l'entreprise en VBA. Solution moins automatisé que la
+                    précédente mais plus robuste. Le programme créer la requête SQL permettant à l'utilisateur
+                    d'extraire les données, puis fait la mise à jour via le fichier télécharger par
+                    l'utilisateur.<br><br>
+                    <a class="CV_lien" href="#">Pour plus d'information, se référer au portfolio</a>
+                </p>
+
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Responsable de la salle de restauration
+                        dans
+                        une <br>résidence pour Séniors (CDD)</span><span class="CV_titre_partie_droite">Juillet
+                        2022</span></h3>
+                <h4 class="CV_sous_titre_partie">DOMITYS, Vitry-le-François (51 300)</h4>
+            </div>
+
+
+            <!--Projet d'études-->
+            <div class="CV_section paire" id="projets_etudes">
+                <h2 class="CV_titre_section">Projets d'études</h2>
+                <p>Lors de mes études nous avons réalisé de nombreux projets appelés SAE pour Situation d'Apprentissage
+                    Evalué. Ses projets ont été réalisé la plupart du temps en équipe allant de 2 à 5. Le but de ces SAE
+                    est d'être mis dans une situation et un contexte professionnel et de répondre aux problématiques du
+                    sujets. La fin des projets est marqué par le rendu des fichiers techniques (les codes de
+                    programmation, ...), accompagné de la documentation technique et d'une présentation oral.<br>
+                    Voici quelques exemples de projets réalisés durant mes études démontrant les différents domaines
+                    d'application de mes études.</p>
+
+                <hr class="CV_separateur_projet">
+
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Datamining / Machine
+                        learning</span><span class="CV_titre_partie_droite">2023 - 2024</span></h3>
+                <h4 class="CV_sous_titre_partie">Mot Clé: Analyse statistique, Datamining, Scoring</h4>
+                <p>Dans ce projet nous avions à notre disposition un jeu de données client d'une assurance. Notre but,
+                    <span class="CV_texte_important">trouver le profil type de client associé à un type
+                        d'assurance</span>
+                    et ainsi pouvoir faire du démarchage
+                    sur des clients potentiellement intéressé. Pour faire cela nous avons utilisé plusieurs méthode tel
+                    que <span class="CV_texte_important">l'AFCM, la segmentation par une CAH et via la méthode des
+                        K-Means
+                        et enfin la mise en placed'une régression logistique</span> qui nous permettra de faire le
+                    prédiction.<br><br>
+                    <a class="CV_lien" href="#">Pour plus d'information, se référer au portfolio</a>
+                </p>
+
+                <hr class="CV_separateur_projet">
+
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Collecte automatisée</span><span
+                        class="CV_titre_partie_droite">2022 - 2023</span></h3>
+                <h4 class="CV_sous_titre_partie">Mot Clé: Programmation, VBA, Pyhton, Parsing, Web srapping</h4>
+                <p>En CV_lien avec l'entreprise <span class="CV_texte_important">ARTEMIS LUXEMBOURG</span>, notre but
+                    était de
+                    collecter des données sur le site
+                    ENTSO-E qui concerne la consommation électrique des pays européens. Cette récolte de données
+                    s'effectue via du <span class="CV_texte_important">parsing et web scrapping</span> en programmation
+                    VBA
+                    (Excel) et Python avec possibilité de
+                    paramétrer la récolte.<br><br>
+                    <a class="CV_lien" href="#">Pour plus d'information, se référer au portfolio</a>
+                </p>
+
+                <hr class="CV_separateur_projet">
+
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Réalisation d'une enquête</span><span
+                        class="CV_titre_partie_droite">2021 - 2022</span></h3>
+                <h4 class="CV_sous_titre_partie">Mot Clé: Enquête, Analyse statistique, Datavisualisation</h4>
+                <p>Dans le cadre de cette SAE, le département c'est associé à l'association <span
+                        class="CV_texte_important">AGORAé</span> venant en aide au
+                    étudiant. Le choix de l'enquête portait sur l'accessibilité au numérique pour les étudiants. Pour ce
+                    projet réalisé en groupe de 5, nous avons réalisé un <span class="CV_texte_important">questionnaire
+                        en
+                        ligne</span> sur LimeSurvey,
+                    réfléchi aux questions, aux types de réponse (ouverte, fermée). <span
+                        class="CV_texte_important">Collecte des données</span> au près des
+                    étudiants, <span class="CV_texte_important">nettoyage des données</span>, <span
+                        class="CV_texte_important">analyse statistique (Rstudio)</span>, <span
+                        class="CV_texte_important">réalisation de datavisualisation</span>.
+                    Et pour finir, réalisation d'un rapport écrit et présentation oral des méthodes utilisées et
+                    résultats obtenus.<br><br>
+                    <a class="CV_lien" href="#">Pour plus d'information, se référer au portfolio</a>
+                </p>
+
+                <hr class="CV_separateur_projet">
+
+                <h3 class="CV_titre_partie"><span class="CV_titre_partie_gauche">Challenge National de
+                        Datavisualisation</span><span class="CV_titre_partie_droite">2021 - 2022</span></h3>
+                <h4 class="CV_sous_titre_partie">Mot Clé: Datavisualisation, DashBoard, Tableau Software</h4>
+                <p>Participation au <span class="CV_texte_important">challenge National de Dataviz</span> organiser par
+                    les
+                    départements de Science des Données de France en coopération avec une entreprise ou un
+                    établissement. Lors de notre année, nous étions
+                    en collaboration avec <span class="CV_texte_important">ATMO France</span>. Notre but en équipe de 3,
+                    avec les données fourni par ATMO, était
+                    de trouver une problématique sur un thème donné et créer des visualisations pertinentes répondant à
+                    notre sujet qui portait sur la pollution de l'air causé par les pesticides. Pour finir nous avons
+                    présenter devant
+                    un jury et notre promotion le travail effectué. Nous avons fini <span class="CV_texte_important">2nd
+                        sur 16 équipe</span> au sein de notre
+                    promotion.<br><br>
+                    <a class="CV_lien" href="#">Pour plus d'information, se référer au portfolio</a>
+                </p>
+
+            </div>
+
+
+            <!--Profil et Compétences-->
+            <div class="CV_section impaire" id="profil_competence">
+                <h2 class="CV_titre_section">Profil et Compétences</h2>
+                <h3 class="CV_titre_partie">Profil</h3>
+
+                <p>
+                    Mes études m'ont permis d'acquérir des compétences dans de nombreux domaines tel que 
+                    <span class="CV_texte_important">l'anaylyse de données</span>, 
+                    <span class="CV_texte_important">la programmation</span> et 
+                    <span class="CV_texte_important">le reporting</span>.<br>
+                    Je suis capable d'intervenir à n'importe quelle étape de
+                    l'analyse statistique, que se soit à l'obtention des données, le stockage dans une base de données,
+                    l'extraction, l'analyse statistique et la présentation des résultats. J'ai aussi des compétences en
+                    <span class="CV_texte_important">programmation web</span>, 
+                    en <span class="CV_texte_important">système d'information géographique (SIG)</span>,
+                    en <span class="CV_texte_important">ce qui concerne la gestion d'entreprise</span>
+                    mais aussi <span class="CV_texte_important">la RGPD</span> 
+                    car travaillant dans un domaine entouré de données vouvant être des données sensibles, 
+                    nous devons être au fait de ce que nous pouvons récolter comme données, et ce que nous
+                    pouvons traiter.
+                </p>
+
+                <p>
+                    A coté de mes études, je suis une personnes active, qui aime pratiquer de <span
+                        class="CV_texte_important">nombreux sports collectifs
+                        ou individuels</span> tel que le badminton, tennis, football, volley ball, la natation et plein
+                    d'autre.
+                    J'ai aussi pratiquer <span class="CV_texte_important">11 ans de musique</span> (de la clarinette)
+                    dont
+                    7 ans dans l'orchestre de l'école de
+                    musique. Toutes ces activités m'ont permises de développer mes capacités de <span
+                        class="CV_texte_important">concentration</span>, de <span class="CV_texte_important">me
+                        fondre dans un collectif</span> afin d'apporter sa pierre à l'édifice pour atteindre notre
+                    objectif et de toujours donner son maximum. Je suis aussi quelqu'un qui
+                    s'intéresse beaucoup à <span class="CV_texte_important">l'histoire et la géopolitique</span>,
+                    comprendre comment des situations ont pu
+                    arriver, quels en ont été les conséquences et les solutions qui ont pu y être apportées.
+                </p>
+
+                <h3 class="CV_titre_partie">Compétences</h3>
+
+                <table id="CV_table_liste_compétence">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="CV_texte_important">Analyse et Reporting:</span>
+                                <ul>
+                                    <li>Analyse Statistique (RStudio, SAS)</li>
+                                    <li>Datamining et Clustering</li>
+                                    <li>Machine Learning</li>
+                                    <li>Datavisualisation (Tableau Software)</li>
+                                    <li>SIG (QGIS)</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="CV_texte_important">Programation:</span>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Parsing web, Scrapping Web</li>
+                                    <li>HTML, CSS, PHP, JS</li>
+                                    <li>VBA</li>
+                                    <li>R, R-shiny</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="CV_texte_important">Base de données:</span>
+                                <ul>
+                                    <li>SQL, NoSQL</li>
+                                    <li>PL-SQL</li>
+                                    <li>Création et Gestion de base de données (My SQL)</li>
+                                    <li>ETL (Pentaho, Talend)</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <span class="CV_texte_important">Autre compétences:</span>
+                                <ul>
+                                    <li>Création de questionnaire (Lime Survey)</li>
+                                    <li>RGPD</li>
+                                    <li>Suite Office</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="CV_texte_important">Langues:</span>
+                                <ul>
+                                    <li>Anglais: niveau B2</li>
+                                    <li>Allemand: niveau A2</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Boutton téléchargement -->
+            <div>
+                <a id="CV_boutton_telechargement" href="Document/CV_Antoine_DESCAMPS.pdf" download="CV_Antoine_DESCAMPS"
+                    target="_blank">Télecharger CV <i id="CV_logo_telecharger" class="bi bi-download"></i></a>
+            </div>
+        </div>
+
+        <hr class="CV_separation">
+
+        <!-- Boutton pour revenir en haut de la page -->
+        <div>
+            <a role="button" href="#" title="Revenir en haut">
+                <i class="bi bi-arrow-up-circle-fill h1" id="CV_boutton_haut"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+    <!--Pied de page avec information de contact-->
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li><a class="nav-link text-light fw-bold">Adresse : Reims-la-Brulée, Marne</a></li>
+            <li><a class="nav-link text-light fw-bold">Téléphone : 06.48.03.47.39</a></li>
+            <li><a class="nav-link text-light fw-bold">Adresse mail : an.descamps6@gmail.com</a></li>
+            <li><a class="nav-link text-light fw-bold" href="https://www.linkedin.com/in/antoine-descamps-765132229/"
+                    target="_blank">Linkedin <i class="bi bi-linkedin"></i></a></li>
+        </ul>
+        <p class="text-center text-light fw-bold">© 2024 Crée par : Antoine DESCAMPS</p>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
